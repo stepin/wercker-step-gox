@@ -1,7 +1,7 @@
 Wercker step gox [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/tcnksm/wercker-step-gox/blob/master/LICENCE)
 ====
 
-[![wercker status](https://app.wercker.com/status/f3f6f75dbda8ac556afa41d2d3eece3b/m "wercker status")](https://app.wercker.com/project/bykey/f3f6f75dbda8ac556afa41d2d3eece3b)
+[![wercker status](https://app.wercker.com/status/5c756560b605b20ad2330182431657b9/s/master "wercker status")](https://app.wercker.com/project/bykey/5c756560b605b20ad2330182431657b9)
 
 This is [wercker](http://wercker.com/) step for [mitchellh/gox](https://github.com/mitchellh/gox), cross-compile golang project.
 

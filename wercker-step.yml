@@ -1,5 +1,5 @@
 name: gox
-version: 0.2.1
+version: 0.2.2
 description: Cross-compiling golang project with mitchellh/gox (bundled).
 keywords:
   - go
