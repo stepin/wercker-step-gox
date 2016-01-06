@@ -1,6 +1,8 @@
 #!/bin/bash
+set -e
 
 # Environmental variables
+XC_OSARCH="$WERCKER_GOX_OSARCH"
 XC_ARCH="$WERCKER_GOX_ARCH"
 XC_OS="$WERCKER_GOX_OS"
 XC_LDFLAGS="$WERCKER_GOX_LDFLAGS"
@@ -12,9 +14,12 @@ XC_OS=${XC_OS:-darwin linux windows freebsd openbsd netbsd plan9}
 OUTPUT="{{.OS}}_{{.Arch}}/{{.Dir}}"
 XC_OUTPUT=${XC_OUTPUT:-$OUTPUT}
 
-gox \
+$WERCKER_STEP_ROOT/bin/gox -v
+
+$WERCKER_STEP_ROOT/bin/gox \
     -os="${XC_OS}" \
     -arch="${XC_ARCH}" \
+    -osarch="${XC_OSARCH}" \
     -ldflags="${XC_LDFLAGS}" \
     -output "${WERCKER_OUTPUT_DIR}/pkg/${XC_OUTPUT}"
 
