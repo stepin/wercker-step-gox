@@ -27,24 +27,6 @@ steps:
      arch: "386 amd64"          # ARCH to cross-compile
 ```
 
-## Preferred Box
-
-You should use below wercker-boxes which are already setup [mitchellh/gox](https://github.com/mitchellh/gox):
-
-- [tcnksm/wercker-box-gox](https://github.com/tcnksm/wercker-box-gox)
-- [motemen/wercker-box-golang-gox](https://github.com/motemen/wercker-box-golang-gox)
-
-If you use wercker-box which is not installed [mitchellh/gox](https://github.com/mitchellh/gox), you need additional steps:
-
-```yaml
-steps:
-    - script:
-        name: install mitchellh/gox
-        code: |
-        go get -u -v github.com/mitchellh/gox
-        sudo -E env PATH=$GOPATH/bin:$PATH gox -build-toolchain
-```
-
 ## Author
 
 [tcnksm](https://github.com/tcnksm)

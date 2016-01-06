@@ -1,4 +1,4 @@
-## 0.2 (2016-01-06)
+## 0.2.1 (2016-01-06)
 
 - bundled gox (git 770c39f64e66797aa46b70ea953ff57d41658e40)
 - added osarch param
