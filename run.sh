@@ -14,8 +14,6 @@ XC_OS=${XC_OS:-darwin linux windows freebsd openbsd netbsd plan9}
 OUTPUT="{{.OS}}_{{.Arch}}/{{.Dir}}"
 XC_OUTPUT=${XC_OUTPUT:-$OUTPUT}
 
-$WERCKER_STEP_ROOT/bin/gox -v
-
 $WERCKER_STEP_ROOT/bin/gox \
     -os="${XC_OS}" \
     -arch="${XC_ARCH}" \
